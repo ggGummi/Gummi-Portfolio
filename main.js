@@ -18,7 +18,7 @@ async function fetchGameStats() {
     document.getElementById('visits').textContent = formatNumber(stats.visits);
     document.getElementById('favorites').textContent = formatNumber(stats.favorites);
     document.getElementById('active-players').textContent = formatNumber(stats.activePlayers);
-    document.getElementById('likes').textContent = `${stats.likes}%`;
+    document.getElementById('likes').textContent = `71%`;
     document.getElementById('last-updated').textContent = stats.lastUpdated;
     
     // Add timestamp of when stats were fetched
@@ -54,10 +54,10 @@ function setStatsLoadingState() {
 
 // Set fallback values in case API calls fail
 function setStatsFallbackState() {
-  document.getElementById('visits').textContent = '150,000+';
-  document.getElementById('favorites').textContent = '2,300+';
+  document.getElementById('visits').textContent = '9.8M+';
+  document.getElementById('favorites').textContent = '20K+';
   document.getElementById('active-players').textContent = '40+';
-  document.getElementById('likes').textContent = '90%+';
+  document.getElementById('likes').textContent = '70%+';
   document.getElementById('last-updated').textContent = 'Recent';
   
   // Display error message to user
