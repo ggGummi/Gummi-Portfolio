@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: #222;
-  --secondary-color: #ff9100;
+  --secondary-color: #3498db; /* Light blue instead of orange #ff9100 */
   --text-color: #e0e0e0;
   --background-color: #121212;
   --accent-color: #303030;
