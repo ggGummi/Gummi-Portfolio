@@ -26,7 +26,7 @@ async function fetchGameStats() {
     if (statsContainer) {
       const updateNote = document.createElement('div');
       updateNote.className = 'stats-update-note';
-      updateNote.textContent = `Stats updated: ${new Date().toLocaleString()}`;
+      updateNote.textContent = `Loaded real-time stats. ${new Date().toLocaleString()}`;
       updateNote.style.fontSize = '0.8rem';
       updateNote.style.marginTop = '10px';
       updateNote.style.textAlign = 'right';
