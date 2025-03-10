@@ -1,203 +1,199 @@
 <!DOCTYPE html>
-<html>
-<title>Portfolio - Gummi</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-img {
-  width: 40%;
-  height: auto;
-}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
+<html lang="en">
+<head>
+  <title>Portfolio - Gummi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#pastwork" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PAST WORK & PROJECTS</p>
-  </a>
-</nav>
+<body>
+  <!-- Page Content -->
+  <div class="container">
+    <!-- Header -->
+    <header id="home">
+      <h1><span>Portfolio - </span>Gummi</h1>
+      <p>Programmer and Roblox Developer</p>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#pastwork">PAST WORK</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </header>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#pastwork" class="w3-bar-item w3-button" style="width:25% !important">PAST WORK & PROJECTS</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-5 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Portfolio - </span>Gummi</h1>
-    <p>Programmer and Roblox Developer.</p>
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-5" id="home">
-    <h2 class="w3-text-light-grey">Gummi</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-      Hello! I'm Gummi, a 19 year-old English Roblox Developer (BST). I joined Roblox in 2014 and I've been developing on Roblox since October 2019 (4 years).
-      I'm extremely well-versed in Roblox Studio and I'm currently on summer break, so I can work often.
-      The languages I'm very confident in are Lua and Python. Feel free to message me!
-    </p>
-    <!--...
-    <!-- Testimonials
-    <h3 class="w3-padding-24 w3-text-light-grey">Reputation</h3>  
-    <p><span class="w3-large w3-margin-right">namehere</span>occupation</p>
-    <p>John Doe saved us from a web disaster.</p><br>
-    
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
-	 -->
-  <!-- End About Section -->
-  <div class="w3-padding-5 w3-content" id="pastwork">
-    <h2 class="w3-text-light-grey">Projects</h2>
-    <hr style="width:200px" class="w3-opacity">
-  </div>
-  <p style="color : orange">
-  <a href="https://www.roblox.com/games/10608101260/Dokkodo">Dokkodo</a><br>
-  <a href="https://www.roblox.com/games/9621604796/Final-Impact">Final Impact</a><br>
-  <a href="https://www.roblox.com/games/10058473097/Dragon-Ball-Xenoverse-3">Dragon Ball Xenoverse</a><br>
-  <a href="https://www.roblox.com/games/7181624697/50th">Anime vs Zombies</a><br>
-  <a href="https://www.roblox.com/games/7238007931/49th">Old Combat Game</a><br>
-  <a href="https://www.roblox.com/games/7296370932/47th">Random Maze Generation</a><br>
-  <a href="https://www.roblox.com/games/12968866459/NEW-John-Pork-Story">John Pork Story</a><br>
-  <a href="https://www.roblox.com/games/13467270209/Fighting">Fighting</a><br>
-  <a href="https://www.roblox.com/games/13447472800/Troops">Troops</a><br>
-  <a href="https://www.roblox.com/games/12699242970/Fishe">Ziplines + Swimming</a><br>
-  <a href="https://www.roblox.com/games/13590459471/Grid-Placement">Tycoon Creator</a><br>
-	  
-  </p>
-  <!-- Portfolio Section -->
-  <div class="w3-padding-5 w3-content" id="pastwork">
-    <h2 class="w3-text-light-grey">Past Work</h2>
-    <h4 class="w3-text-light-grey">Please wait a moment for videos to load.</h3>
-    <hr style="width:200px" class="w3-opacity">
-  <!-- End Portfolio Section -->
-  </div>
-  </div>
-	<center>
-	    <h3>
-	      Magic
-	    </3>
-    </center>
-  <center>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Fighting.mp4" type="video/mp4">
-    </video>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Ziplines.mp4" type="video/mp4">
-    </video>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Swimming.mp4" type="video/mp4">
-    </video>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Troops.mp4" type="video/mp4">
-    </video>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Skill Tree.mp4" type="video/mp4">
-    </video>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Maze Generation.mp4" type="video/mp4">
-    </video>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Final Impact.mp4" type="video/mp4">
-    </video>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Dokkodo.mp4" type="video/mp4">
-    </video>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Character Creation.mp4" type="video/mp4">
-    </video>
-    <video width="960px" height="540px" autoplay muted loop>
-      <source src="Tycoon Creator.mp4" type="video/mp4">
-    </video>  
-   <video width="960px" height="540px" autoplay muted loop>
-      <source src="Shooter.mp4" type="video/mp4">
-    </video>  
-   <video width="960px" height="540px" autoplay muted loop>
-      <source src="Inventory.mp4" type="video/mp4">
-    </video>  
-  </center>
-    <center>
-	    <h3>
-	      Magic
-	    </3>
-    </center>
-    <center>
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="iceskate.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="bubble.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="icesword.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="clones.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="blow.gif">
-    </center>
-    <center>
-	    <h3>
-	      Completely Random Maze Generation
-	    </3>
-    </center>
-    <center>
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="mazecompleted.png">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="mazegeneration.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="mazecompleted2.png">
-    </center>
-    <center>
-	    <h3>
-	      Combat
-	    </3>
-    </center>
-    <center>
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="combat.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="scythe.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="stance.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="swordblock.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="roll.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="parried.gif">
-    </center>
-    <center>
-      <h3>
-          Misc
-      </3>
-    </center>
-    <center>
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="skilltree.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="inventory.gif">
-      <img style="width: 500px; height: 500px; object-fit: cover;" src="animevszombies.gif">
-    </center>
-    <center>
-      <br>
-      <li>Proficient in both Back-End and Front-end scripting</li>
-      <li>Extremely well experienced in Roblox Studio</li>
-      <li>All-round Flexible Scripter</li>
-      <li>Use of Object Orientated Programming</li>
-      <h2>
-          Contact
-      </2>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="divider"></div>
       <p>
-          Discord: gggummi
+        Hello! I'm Gummi, a 20 year-old English Roblox Developer (BST). I joined Roblox in 2014 and I've been developing
+        on Roblox since October 2019. I am extremely well-versed in Roblox Studio.
+        The languages I'm very confident in are Lua and Python. Feel free to message me!
       </p>
-    </center>
-  </div>
-</body>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Major Projects</h2>
+      <div class="divider"></div>
+      
+      <div class="project-item">
+        <h3>John Pork Story</h3>
+        <div class="project-links">
+          <a href="https://www.roblox.com/games/12968866459/John-Pork-is-Calling" target="_blank">Play on Roblox</a>
+        </div>
+        
+        <div class="project-details">
+          <div class="project-media">
+            <img src="assets/jps.png" alt="John Pork is Calling." class="project-thumbnail">
+          </div>
+          
+          <div class="project-info">
+            <div class="project-stats">
+              <div class="stat-item">
+                <span class="stat-label">Visits</span>
+                <span class="stat-value" id="visits">Loading...</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Favorites</span>
+                <span class="stat-value" id="favorites">Loading...</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Active Players</span>
+                <span class="stat-value" id="active-players">Loading...</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Likes</span>
+                <span class="stat-value" id="likes">Loading...</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Last Updated</span>
+                <span class="stat-value" id="last-updated">Loading...</span>
+              </div>
+            </div>
+            
+            <div class="project-description">
+              <h4>About this Game</h4>
+              <p>John Pork is Calling is an action-adventure game where players embark on an epic journey as the legendary hero John Pork. Experience intense combat, explore vast environments, and uncover the mysterious story behind John Pork's adventures.</p>
+              
+              <h4>Key Features</h4>
+              <ul>
+                <li>Dynamic combat system with various weapons and abilities</li>
+                <li>Open-world exploration with unique environments</li>
+                <li>Progression system with character customization</li>
+                <li>Story-driven gameplay with multiple quests</li>
+                <li>Regular updates with new content</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Work Section -->
+    <section id="pastwork">
+      <h2>Past Work</h2>
+      <div class="divider"></div>
+      <p class="loading-note">Please wait a moment for videos to load.</p>
+
+      <h3>Game Demonstrations</h3>
+      <div class="video-gallery">
+        <video autoplay muted loop>
+          <source src="assets/Fighting.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Ziplines.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Swimming.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Troops.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Skill Tree.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Maze Generation.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Final Impact.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Dokkodo.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Character Creation.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Tycoon Creator.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Shooter.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop>
+          <source src="assets/Inventory.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <h3>Magic Systems</h3>
+      <div class="image-gallery">
+        <img src="assets/iceskate.gif" alt="Ice Skating Magic">
+        <img src="assets/bubble.gif" alt="Bubble Magic">
+        <img src="assets/icesword.gif" alt="Ice Sword Magic">
+        <img src="assets/clones.gif" alt="Clone Magic">
+        <img src="assets/blow.gif" alt="Blow Magic">
+      </div>
+
+      <h3>Maze Generation</h3>
+      <div class="image-gallery">
+        <img src="assets/mazecompleted.png" alt="Completed Maze">
+        <img src="assets/mazegeneration.gif" alt="Maze Generation Process">
+        <img src="assets/mazecompleted2.png" alt="Completed Maze 2">
+      </div>
+
+      <h3>Combat Systems</h3>
+      <div class="image-gallery">
+        <img src="assets/combat.gif" alt="Combat System">
+        <img src="assets/scythe.gif" alt="Scythe Combat">
+        <img src="assets/stance.gif" alt="Combat Stance">
+        <img src="assets/swordblock.gif" alt="Sword Blocking">
+        <img src="assets/roll.gif" alt="Combat Roll">
+        <img src="assets/parried.gif" alt="Parry System">
+      </div>
+
+      <h3>Miscellaneous</h3>
+      <div class="image-gallery">
+        <img src="assets/skilltree.gif" alt="Skill Tree">
+        <img src="assets/inventory.gif" alt="Inventory System">
+        <img src="assets/animevszombies.gif" alt="Anime vs Zombies">
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="divider"></div>
+      <ul>
+        <li>Proficient in both Back-End and Front-end scripting</li>
+        <li>Extremely well experienced in Roblox Studio</li>
+        <li>All-round Flexible Scripter</li>
+        <li>Use of Object Orientated Programming</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="divider"></div>
+      <p>Discord: gggummi</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Gummi - Roblox Developer</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
 </html>
