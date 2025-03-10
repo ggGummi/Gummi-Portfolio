@@ -10,7 +10,7 @@ async function fetchGameStats() {
     setStatsLoadingState();
     
     // Call our Netlify function (note the /api/ prefix defined in redirects)
-    const response = await fetch('/.netlify/functions/getRobloxStats');
+    const response = await fetch('/.netlify/functions/getrobloxstats');
     if (!response.ok) throw new Error('Failed to fetch game stats');
     const stats = await response.json();
     
