@@ -1,4 +1,5 @@
 exports.handler = async function(event, context) {
+  console.log("Function triggered!", new Date().toISOString());
   try {
     // Enable CORS
     const headers = {
