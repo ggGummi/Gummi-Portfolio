@@ -71,3 +71,40 @@ function setStatsFallbackState() {
     statsContainer.appendChild(errorMessage);
   }
 }
+
+// Add this before the closing </body> tag
+document.addEventListener('DOMContentLoaded', function() {
+  // Check if the device is mobile
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  
+  // Get all videos
+  const videos = document.querySelectorAll('.video-gallery video');
+  
+  if (isMobile) {
+    // Add mobile-specific attributes to make videos work on mobile
+    videos.forEach(video => {
+      video.setAttribute('playsinline', '');
+      video.setAttribute('controls', '');
+      
+      // Mobile devices often block autoplay with sound
+      // This ensures videos at least show up and can be played manually
+      if (!video.hasAttribute('muted')) {
+        video.setAttribute('muted', '');
+      }
+    });
+  } else {
+    // Ensure desktop behavior remains unchanged
+    videos.forEach(video => {
+      // Keep your existing desktop attributes
+      if (!video.hasAttribute('autoplay')) {
+        video.setAttribute('autoplay', '');
+      }
+      if (!video.hasAttribute('muted')) {
+        video.setAttribute('muted', '');
+      }
+      if (!video.hasAttribute('loop')) {
+        video.setAttribute('loop', '');
+      }
+    });
+  }
+});

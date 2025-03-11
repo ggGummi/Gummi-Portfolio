@@ -220,7 +220,6 @@ h4 {
   margin-bottom: 8px;
 }
 
-/* Video Gallery */
 .video-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -300,6 +299,11 @@ footer {
   color: #666;
 }
 
+/* About Section - Not centered by default */
+#about p {
+  text-align: left;
+}
+
 /* Responsive Adjustments */
 @media (min-width: 768px) {
   .project-details {
@@ -315,6 +319,11 @@ footer {
   .project-info {
     flex: 1;
   }
+  
+  /* Desktop video behavior remains unchanged */
+  .video-gallery video {
+    /* Keeps your existing desktop styling */
+  }
 }
 
 @media (max-width: 768px) {
@@ -322,8 +331,19 @@ footer {
     font-size: 2.5rem;
   }
   
+  /* Center about me text only on mobile */
+  #about p {
+    text-align: center;
+  }
+  
   .video-gallery {
     grid-template-columns: 1fr;
+  }
+  
+  /* Mobile-specific video adjustments */
+  .video-gallery video {
+    max-height: 250px;
+    object-fit: cover;
   }
   
   .image-gallery {
