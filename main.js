@@ -15,9 +15,10 @@ async function fetchGameStats() {
     const stats = await response.json();
     
     // Update the UI with loaded data
-    document.getElementById('visits').textContent = formatNumber(stats.visits);
-    document.getElementById('favorites').textContent = formatNumber(stats.favorites);
-    document.getElementById('active-players').textContent = formatNumber(stats.activePlayers);
+    document.getElementById('stats-title').textContent = 'Live Stats';
+    document.getElementById('visits').textContent = abbreviateNumber(stats.visits);
+    document.getElementById('favorites').textContent = abbreviateNumber(stats.favorites);
+    document.getElementById('active-players').textContent = abbreviateNumber(stats.activePlayers);
     document.getElementById('likes').textContent = `71%`;
     document.getElementById('last-updated').textContent = stats.lastUpdated;
     
@@ -41,6 +42,16 @@ async function fetchGameStats() {
 // Format numbers with commas
 function formatNumber(number) {
   return number.toLocaleString();
+}
+
+// Abbreviate large numbers to fit in small containers
+function abbreviateNumber(number) {
+  if (number >= 1000000) {
+    return (number / 1000000).toFixed(1) + 'M';
+  } else if (number >= 1000) {
+    return (number / 1000).toFixed(1) + 'K';
+  }
+  return number.toString();
 }
 
 // Set loading state for stats
