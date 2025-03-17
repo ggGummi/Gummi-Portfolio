@@ -176,6 +176,13 @@ h4 {
   gap: 15px;
 }
 
+#stats-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
 .stat-item {
   flex: 1;
   min-width: 120px;

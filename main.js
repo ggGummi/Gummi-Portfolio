@@ -56,6 +56,7 @@ function abbreviateNumber(number) {
 
 // Set loading state for stats
 function setStatsLoadingState() {
+  document.getElementById('stats-title').textContent = 'Loading Stats...';
   document.getElementById('visits').textContent = 'Loading...';
   document.getElementById('favorites').textContent = 'Loading...';
   document.getElementById('active-players').textContent = 'Loading...';
@@ -65,6 +66,7 @@ function setStatsLoadingState() {
 
 // Set fallback values in case API calls fail
 function setStatsFallbackState() {
+  document.getElementById('stats-title').textContent = 'Recent Stats';
   document.getElementById('visits').textContent = '9.8M+';
   document.getElementById('favorites').textContent = '20K+';
   document.getElementById('active-players').textContent = '40+';
